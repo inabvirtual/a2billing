@@ -105,20 +105,24 @@ $smarty->display('signup_header.tpl');
 
 <blockquote>
     <div align="center"><br><br>
-     <font color="#FF0000"><b><?php echo gettext("SIGNUP CONFIRMATION"); ?></b></font><br>
+     <font color="#FF0000"><b><?php echo gettext("CONFIRMACION DE REGISTRO"); ?></b></font><br>
           <br/><br/>
 
     <?php if (!$activatedbyuser) { ?>
-        <?php echo $list[0][2]; ?> <?php echo $list[0][1]; ?>, <?php echo gettext("thank you for registering with us!");?><br>
-        <?php echo gettext("An activation email has been sent to"); ?> <b><?php echo $list[0][3]; ?></b><br><br>
+        <?php echo $list[0][2]; ?> <?php echo $list[0][1]; ?>, <?php echo gettext("Gracias por registrar su cuenta con nosotros!");?><br>
+        <?php echo gettext("Un email de activacion ha sido enviado a"); ?> <b><?php echo $list[0][3]; ?></b><br><br>
     <?php } else { ?>
-          <?php echo $list[0][2]; ?> <?php echo $list[0][1]; ?>, <?php echo gettext("Thank you for registering with us !");?><br>
-          <?php echo gettext("An email confirming your information has been sent to"); ?> <b><?php echo $list[0][3]; ?></b><br><br>
+          <?php echo $list[0][2]; ?> <?php echo $list[0][1]; ?>, <?php echo gettext("Gracias por registrar su cuenta con nosotros!");?><br>
+          <?php echo gettext("Un email de confirmacion y tu info de cuenta ha sido enviado a"); ?> <b><?php echo $list[0][3]; ?></b><br><br>
             <h3>
-              <?php echo gettext("Your cardnumber is "); ?> <b><font color="#00AA00"><?php echo $list[0][0]; ?></font></b><br><br><br>
-              <?php echo gettext("To login to your account :"); ?><br>
-              <?php echo gettext("Your card alias (login) is "); ?> <b><font color="#00AA00"><?php echo $list[0][6]; ?></font></b><br>
-              <?php echo gettext("Your password is "); ?> <b><font color="#00AA00"><?php echo $list[0][4]; ?></font></b><br>
+              <?php echo gettext("Datos de configuracion :"); ?><br>
+              <?php echo gettext("Su usuario voip es: "); ?> <b><font color="#00AA00"><?php echo $list[0][0]; ?></font></b><br>
+              <?php echo gettext("Su password es "); ?> <b><font color="#00AA00"><?php echo $list[0][4]; ?></font></b><br>
+              <?php echo gettext("Servidor : sip3.inabvirtual.com"); ?><br><br><br>
+              <?php echo gettext("Datos para acceso via web"); ?><br>
+              <?php echo gettext("Su login para la web es "); ?> <b><font color="#00AA00"><?php echo $list[0][6]; ?></font></b><br>
+              <?php echo gettext("Su password es "); ?> <b><font color="#00AA00"><?php echo $list[0][4]; ?></font></b><br>
+              <?php echo gettext("Sitio web : https://Voice.inabvirtual.com "); ?><br>
             </h3>
     <?php } ?>
 

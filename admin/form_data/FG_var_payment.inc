@@ -33,7 +33,7 @@
 
 
 
-getpost_ifset(array('id', 'card_id', 'date', 'payment','description','added_refill','refill_type'));
+getpost_ifset(array('id', 'card_id', 'date', 'payment','description','added_refill','refill_type','lastname'));
 
 
 if (!isset($form_action) || $form_action=="list") {
@@ -61,8 +61,9 @@ $HD_Form -> AddViewElement(gettext("PAYMENT DATE"), "date", "17%", "center", "so
 $HD_Form -> AddViewElement(gettext("PAYMENT AMOUNT"), "payment", "15%", "center", "sort","", "", "", "", "", "", "display_money");
 $HD_Form -> AddViewElement(gettext("PAYMENT TYPE"),"payment_type", "13%", "center", "sort", "", "list", $list_refill_type);
 $HD_Form -> AddViewElement(gettext("REFILL"), "id_logrefill", "17%", "center", "sort", "", "lie_link", "cc_logrefill", "TRUNCATE(credit,2), id", "id='%id'", "%1 ".BASE_CURRENCY." (id:%2)", "", "A2B_refill_info.php");
+$HD_Form -> AddViewElement(gettext("NAME"), "lastname", "17%", "center", "sort", "", "15", "", "", "", "", "");
 
-$HD_Form -> FieldViewElement ('cc_logpayment.id, card_id, date, payment ,payment_type,id_logrefill');
+$HD_Form -> FieldViewElement ('cc_logpayment.id, card_id, date, payment , payment_type, id_logrefill, lastname');
 
 
 $HD_Form -> CV_NO_FIELDS  = gettext("THERE IS NO ".strtoupper($HD_Form->FG_INSTANCE_NAME)." CREATED!");
@@ -165,7 +166,7 @@ if (has_rights (ACX_MODIFY_PAYMENTS)) {
 	if ($form_action!="ask-edit" && $form_action!="edit") {
 		$HD_Form -> AddEditElement (gettext("CREATE ASSOCIATE REFILL"),
 					   "added_refill",
-					   '0',
+					   '1',
 					   "RADIOBUTTON",
 					   "",
 					   "",

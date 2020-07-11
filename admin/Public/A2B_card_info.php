@@ -628,6 +628,7 @@ echo Display_Login_Button ($DBHandle, $id);
      <a class="cssbutton_big"  href="A2B_entity_card.php?section=1">
         <img src="<?php echo Images_Path_Main;?>/icon_arrow_orange.gif"/>
         <?php echo gettext("CUSTOMERS LIST"); ?>
+		<p> <a href="A2B_entity_payment.php?form_action=ask-add&amp;card_id=<?php echo $id ?>"><img src="../Public/templates/default/images/money.png" alt="Add Payment to this Card" width="27" height="30" border="0" title="Add Payment to this Card"></a></p>
     </a>
 </div>
 <br/>

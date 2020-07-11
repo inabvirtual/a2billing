@@ -71,7 +71,8 @@ $default_conf_file_direcotry = AST_CONF_DIR;
 
 // regular expression filter for valid conf files
 //$conf_file_filter = "/.conf\$|.cnf\$/";
-$conf_file_filter = "/a2billing.conf\$|^extensions.conf\$|^iax.conf|sip.conf\$|iax.conf\$/";
+// $conf_file_filter = "/a2billing.conf\$|^extensions.conf\$|^iax.conf|sip.conf\$|iax.conf\$/";
+$conf_file_filter = "/a2billing.conf\$|^extensions.conf\$|^iax.conf|sip.conf\$|iax.conf\$|extensions_local.conf\$|sip_additional.conf\$|sip_local.conf\$|extensions_custom.conf\$|followme.conf\$/";
 
 // command for switch to read conf files
 // commented out for demo

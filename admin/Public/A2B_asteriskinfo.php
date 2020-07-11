@@ -243,6 +243,10 @@ if (!$astman) {
     </table>
 <tr>
     <td colspan="2"><h6><input name="Submit" class="form_input_button" type="submit" value="<?php echo _("Refresh")?>"></h6></td>
+	
+	<!-- Adicionado por inabvirtual para refrescar la pantalla periodicamente //-->
+	<meta http-equiv="refresh" content="2" />
+	
 </tr>
 </table>
 

@@ -85,7 +85,7 @@ if (!isset ($currencies_list[strtoupper($customer_info[22])][2]) || !is_numeric(
 }
 
 $credit_cur = $customer_info[1] / $mycur;
-$credit_cur = round($credit_cur, 3);
+$credit_cur = round($credit_cur, 2);   // Modificado por Inabvirtual Nestor Andrade
 $useralias = $customer_info['useralias'];
 $creation_date = $customer_info['creationdate'];
 $username = $customer_info['username'];

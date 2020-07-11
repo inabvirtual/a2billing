@@ -252,7 +252,7 @@ $FG_ASR_CIC_CLAUSE = $FG_TABLE_CLAUSE;
 
 //To select just terminatecauseid=ANSWER
 if (! isset ( $terminatecauseid )) {
-    $terminatecauseid = "ANSWER";
+    $terminatecauseid = "ALL";   // Modificado por Inabvirtual Nestor Andrade
 }
 if ($terminatecauseid == "ANSWER") {
     if (strlen ( $FG_TABLE_CLAUSE ) > 0)

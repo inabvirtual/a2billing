@@ -4,29 +4,29 @@
 {if ($popupwindow == 0)}
 	<div id="top_menu">
 		<ul id="menu_horizontal">
-			<li class="topmenu-left-button" style="border:none;">
+                        <li class="topmenu-left-button" style="border:none;">
 				<div style="width:100%;height:100%;text-align:center;" >
-					<a href="PP_intro.php">
+					<a href="PP_intro.php"> 
 							<strong> {php} echo gettext("HOME");{/php}</strong>&nbsp;
-						<img style="vertical-align:bottom;" src="templates/{$SKIN_NAME}/images/house.png">
+						<img style="vertical-align:bottom;" src="templates/{$SKIN_NAME}/images/house.png"> 
 					</a>
 				</div>
 			</li>
 			{if ($ACXDASHBOARD > 0) }
 			<li class="topmenu-left-button" >
 				<div style="width:100%;height:100%;text-align:center;" >
-					<a href="dashboard.php" >
+					<a href="dashboard.php" > 
 						<strong> {php} echo gettext("DASHBOARD");{/php}</strong>&nbsp;
-						<img style="vertical-align:bottom;" src="templates/{$SKIN_NAME}/images/chart_bar.png">
+						<img style="vertical-align:bottom;" src="templates/{$SKIN_NAME}/images/chart_bar.png"> 
 					</a>
 				</div>
 			</li>
 			{/if}
 			<li class="topmenu-left-button">
 				<div style="width:100%;height:100%;text-align:center;" >
-					 <a href="A2B_notification.php" >
+					 <a href="A2B_notification.php" > 
 						<strong > {php} echo gettext("NOTIFICATION");{/php}</strong>&nbsp;
-					<img style="vertical-align:bottom;" src="templates/{$SKIN_NAME}/images/email.png">
+					<img style="vertical-align:bottom;" src="templates/{$SKIN_NAME}/images/email.png"> 
 					{if ($NEW_NOTIFICATION > 0) }
 						<strong style="font-size:8px; color:red;"> NEW</strong>
 					{else}
@@ -35,6 +35,49 @@
 					  </a>
 				</div>
 			</li>
+			
+			<li class="topmenu-left-button" style="border:none;">
+                                <div style="width:100%;height:100%;text-align:center;" >
+                                        <a href="A2B_entity_payment_agent.php?atmenu=payment&amp;section=10">
+                                                        <strong> {php} echo gettext("AGENTS-Payment");{/php}</strong>&nbsp;
+                                                <img style="vertical-align:bottom;" src="templates/{$SKIN_NAME}/images/house.png">
+                                        </a>
+</div>
+                        </li>
+
+			<li class="topmenu-left-button" style="border:none;">
+                                <div style="width:100%;height:100%;text-align:center;" >
+                                        <a href="A2B_entity_card.php?order=lastname&sens=ASC&&mydisplaylimit=10">
+                                                        <strong> {php} echo gettext("CUSTOMERS");{/php}</strong>&nbsp;
+                                                <img style="vertical-align:bottom;" src="templates/{$SKIN_NAME}/images/house.png">
+                                        </a>
+                                </div>
+                        </li>
+                        <li class="topmenu-left-button" style="border:none;">
+                                <div style="width:100%;height:100%;text-align:center;" >
+                                        <a href="A2B_entity_trunk.php?section=7&order=trunkcode&sens=ASC&mydisplaylimit=ALL">
+                                                        <strong> {php} echo gettext("TRUNKS");{/php}</strong>&nbsp;
+                                                <img style="vertical-align:bottom;" src="templates/{$SKIN_NAME}/images/house.png">
+                                        </a>
+                                </div>
+                        </li>
+                        <li class="topmenu-left-button" style="border:none;">
+                                <div style="width:100%;height:100%;text-align:center;" >
+                                        <a href="call-log-customers.php?s=1&t=0&order=t1.starttime&sens=DESC&current_page=0">
+                                                        <strong> {php} echo gettext("CDR");{/php}</strong>&nbsp;
+                                                <img style="vertical-align:bottom;" src="templates/{$SKIN_NAME}/images/house.png">
+                                        </a>
+                                </div>
+                        </li>
+                        <li class="topmenu-left-button" style="border:none;">
+                                <div style="width:100%;height:100%;text-align:center;" >
+                                        <a href="A2B_asteriskinfo.php?section=16&type=tool&display=asteriskinfo&extdisplay=channels">
+                                                        <strong> {php} echo gettext("CHANNELS");{/php}</strong>&nbsp;
+                                                <img style="vertical-align:bottom;" src="templates/{$SKIN_NAME}/images/house.png">
+                                        </a>
+                                </div>
+                        </li>
+
 			<li class="topmenu-right-button" style="border-right:none;">
 				<div style="width:90%;height:100%;text-align:center;" >
 					<a href="logout.php?logout=true" target="_top"><font color="#EC3F41"><b>&nbsp;&nbsp;{php} echo gettext("LOGOUT");{/php}</b></font>
@@ -44,7 +87,7 @@
 		</ul>
 
 	</div>
-
+	
 {/if}
 
 {if ($popupwindow == 0)}

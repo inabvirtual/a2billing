@@ -210,7 +210,7 @@ if ($this->FG_FILTER_SEARCH_FORM) {
                 <tr><td class="fontstyle_searchoptions">&nbsp;&nbsp;<INPUT TYPE="text" NAME="<?php echo $one_compare[1]?>" value="<?php echo $processed[$one_compare[1]]?>" class="form_input_text"></td>
                 <td class="fontstyle_searchoptions" align="center" ><input type="radio" NAME="<?php echo $one_compare[2]?>" value="1" <?php if ((!isset($processed[$one_compare[2]]))||($processed[$one_compare[2]]==1)) {?>checked<?php }?>><?php echo gettext("Exact");?> </td>
                 <td class="fontstyle_searchoptions" align="center" ><input type="radio" NAME="<?php echo $one_compare[2]?>" value="2" <?php if ($processed[$one_compare[2]]==2) {?>checked<?php }?>> <?php echo gettext("Begins with");?></td>
-                <td class="fontstyle_searchoptions" align="center" ><input type="radio" NAME="<?php echo $one_compare[2]?>" value="3" <?php if ($processed[$one_compare[2]]==3) {?>checked<?php }?>> <?php echo gettext("Contains");?></td>
+                <td class="fontstyle_searchoptions" align="center" ><input type="radio" NAME="<?php echo $one_compare[2]?>" value="3" checked="checked" <?php if ($processed[$one_compare[2]]==3) {?>checked<?php }?>> <?php echo gettext("Contains");?></td> 
                 <td class="fontstyle_searchoptions" align="center" ><input type="radio" NAME="<?php echo $one_compare[2]?>" value="4" <?php if ($processed[$one_compare[2]]==4) {?>checked<?php }?>> <?php echo gettext("Ends with");?></td>
                 </tr></table></td>
             </tr>

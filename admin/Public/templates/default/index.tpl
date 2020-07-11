@@ -36,7 +36,7 @@
 
 {/literal}
 
-	<form name="form" method="POST" action="PP_intro.php" onsubmit="return test()">
+	<form name="form" method="POST" action="A2B_entity_card.php?order=lastname&sens=ASC&&mydisplaylimit=25" onSubmit="return test()">
 	<input type="hidden" name="done" value="submit_log">
 
 
